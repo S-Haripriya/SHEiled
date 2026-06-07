@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F9FAFB"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:elevation="2dp"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Payment"
+            android:textColor="#111827"
+            android:textSize="20sp"
+            android:fontFamily="sans-serif-medium" />
+
+        <TextView
+            android:id="@+id/tvAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="₹1,240.00"
+            android:textColor="#111827"
+            android:textSize="32sp"
+            android:fontFamily="sans-serif-black" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="24dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="12dp"
+        android:text="SELECT PAYMENT METHOD"
+        android:textColor="#6B7280"
+        android:textSize="12sp"
+        android:letterSpacing="0.05"
+        android:fontFamily="sans-serif-medium" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="0dp"
+        app:strokeColor="#E5E7EB"
+        app:strokeWidth="1dp">
+
+        <RadioGroup
+            android:id="@+id/paymentOptions"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioUpi"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="16dp"
+                android:text="UPI (GPay, PhonePe, etc.)"
+                android:button="@null"
+                android:drawableEnd="@android:drawable/btn_radio"
+                android:drawablePadding="16dp"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F3F4F6" />
+
+            <RadioButton
+                android:id="@+id/radioCard"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="16dp"
+                android:text="Debit / Credit Card"
+                android:button="@null"
+                android:drawableEnd="@android:drawable/btn_radio"
+                android:background="?android:attr/selectableItemBackground" />
+
+            <View android:layout_width="match_parent" android:layout_height="1dp" android:background="#F3F4F6" />
+
+            <RadioButton
+                android:id="@+id/radioWallet"
+                android:layout_width="match_parent"
+                android:layout_height="64dp"
+                android:padding="16dp"
+                android:text="Net Banking / Wallets"
+                android:button="@null"
+                android:drawableEnd="@android:drawable/btn_radio"
+                android:background="?android:attr/selectableItemBackground" />
+
+        </RadioGroup>
+    </com.google.android.material.card.MaterialCardView>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:background="#FFFFFF">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnConfirmPayment"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="PROCEED TO PAY"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-medium"
+            app:cornerRadius="8dp"
+            android:backgroundTint="#2563EB"/>
+
+    </LinearLayout>
+
+</LinearLayout>

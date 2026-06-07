@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:text="Driving License Verification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:layout_marginBottom="16dp"/>
+
+        <ImageView
+            android:id="@+id/imgLicense"
+            android:layout_width="match_parent"
+            android:layout_height="220dp"
+            android:background="#EEEEEE"
+            android:scaleType="fitCenter"
+            android:contentDescription="Uploaded Driving License"/>
+
+        <Button
+            android:id="@+id/btnUpload"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Upload License Image"
+            android:layout_marginTop="12dp"/>
+        <Button
+            android:id="@+id/btnSelfie"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Capture Selfie (Liveness Check)"
+            android:layout_marginTop="12dp"/>
+
+        <Button
+            android:id="@+id/btnVerify"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Verify License"
+            android:layout_marginTop="12dp"/>
+
+        <TextView
+            android:id="@+id/tvInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Only valid FEMALE driving licenses are allowed"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            android:textColor="#757575"/>
+
+    </LinearLayout>
+
+</ScrollView>

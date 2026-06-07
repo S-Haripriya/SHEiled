@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Set Alert Message"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Alert Message Input -->
+    <EditText
+        android:id="@+id/etAlertMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter alert message"
+        android:inputType="textMultiLine"
+        android:minLines="3"
+        android:gravity="top"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Select Contacts Label -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Select emergency contacts"
+        android:textStyle="bold"
+        android:layout_marginBottom="6dp" />
+
+    <!-- Multi-select Contact List -->
+    <ListView
+        android:id="@+id/listContacts"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:choiceMode="multipleChoice"
+        android:dividerHeight="1dp"
+        android:layout_marginBottom="10dp" />
+
+    <!-- Set as Default Alert -->
+    <CheckBox
+        android:id="@+id/checkDefault"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Use this as default SOS message"
+        android:layout_marginBottom="12dp" />
+
+    <!-- Save Button -->
+    <Button
+        android:id="@+id/btnSaveAlert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Save Alert" />
+
+</LinearLayout>

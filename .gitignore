@@ -1,0 +1,33 @@
+# Android Studio / IntelliJ
+*.iml
+.idea/
+.gradle/
+
+# Local machine settings
+local.properties
+
+# Firebase Android config
+google-services.json
+
+# Build outputs
+/build
+**/build/
+**/BuildConfig.*
+
+# Native builds
+.externalNativeBuild
+.cxx
+
+# macOS
+.DS_Store
+
+# Screenshots/captures
+/captures
+
+# Keystores
+*.jks
+*.keystore
+
+# Environment files
+.env
+.env.*

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <!-- Pickup Button -->
+
+    <Button
+        android:id="@+id/btnSelectPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Pickup Location" />
+
+    <!-- Selected Pickup Location -->
+
+    <TextView
+        android:id="@+id/tvPickupLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pickup: Not selected"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:paddingTop="6dp"
+        android:paddingBottom="10dp" />
+
+
+
+    <!-- Destination Button -->
+
+    <Button
+        android:id="@+id/btnSelectDestination"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Destination" />
+
+    <!-- Selected Destination -->
+
+    <TextView
+        android:id="@+id/tvDestLocation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination: Not selected"
+        android:textSize="14sp"
+        android:textColor="#555"
+        android:paddingTop="6dp"
+        android:paddingBottom="12dp" />
+
+
+
+    <!-- Confirm Booking Button -->
+
+    <Button
+        android:id="@+id/btnConfirmBooking"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirm Booking"
+        android:layout_marginTop="10dp" />
+
+</LinearLayout>

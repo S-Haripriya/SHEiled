@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F4EEF8"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <!-- Header -->
+    <TextView
+        android:id="@+id/tvMonth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="#3E206D"
+        android:layout_gravity="center_horizontal"
+        android:text="Month Year" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        app:cardCornerRadius="24dp"
+        app:cardElevation="6dp"
+        android:backgroundTint="@android:color/white">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="18dp">
+
+            <!-- Week Row -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView style="@style/WeekDayStyle" android:text="Sun"/>
+                <TextView style="@style/WeekDayStyle" android:text="Mon"/>
+                <TextView style="@style/WeekDayStyle" android:text="Tue"/>
+                <TextView style="@style/WeekDayStyle" android:text="Wed"/>
+                <TextView style="@style/WeekDayStyle" android:text="Thu"/>
+                <TextView style="@style/WeekDayStyle" android:text="Fri"/>
+                <TextView style="@style/WeekDayStyle" android:text="Sat"/>
+            </LinearLayout>
+            <!-- Calendar Grid -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerCalendar"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="12dp"/>
+            <Button
+                android:id="@+id/btnReminder"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Reminder"
+                android:backgroundTint="#E9D5FF"
+                android:textColor="#5B21B6"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginTop="12dp"/>
+            <Button
+                android:id="@+id/btnEditDates"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:text="Edit Dates"
+                android:backgroundTint="#E9D5FF"
+                android:textColor="#5B21B6"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:layout_marginTop="20dp"/>
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>

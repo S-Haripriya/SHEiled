@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@android:color/white">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booking Details"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        android:gravity="center"
+        android:paddingBottom="12dp"/>
+
+    <!-- Booking Time -->
+    <TextView
+        android:id="@+id/tvTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Booked at:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"/>
+
+    <!-- Pickup Location -->
+    <TextView
+        android:id="@+id/tvPickup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pickup Location:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp"/>
+
+    <!-- Destination -->
+    <TextView
+        android:id="@+id/tvDest"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Destination:"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="6dp"
+        android:paddingBottom="16dp"/>
+
+    <!-- Cancel Booking Button -->
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:text="Cancel Booking"
+        android:textAllCaps="false"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:layout_marginTop="10dp"/>
+
+</LinearLayout>

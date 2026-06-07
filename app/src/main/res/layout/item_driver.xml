@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="10dp"
+    app:cardCornerRadius="8dp"
+    app:cardElevation="4dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="12dp">
+
+        <!-- Driver Name -->
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Driver Name"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@id/btnBook"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <!-- Vehicle Model -->
+        <TextView
+            android:id="@+id/tvVehicle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Vehicle Model"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/btnBook"
+            app:layout_constraintTop_toBottomOf="@id/tvName"/>
+
+        <!-- Area -->
+        <TextView
+            android:id="@+id/tvArea"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Service Area"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/btnBook"
+            app:layout_constraintTop_toBottomOf="@id/tvVehicle"/>
+
+        <!-- Base Fare -->
+        <TextView
+            android:id="@+id/tvFare"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Base Fare: ₹120"
+            android:textStyle="bold"
+            android:textSize="13sp"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/btnBook"
+            app:layout_constraintTop_toBottomOf="@id/tvArea"/>
+
+        <!-- RIDE DETAILS (VISIBLE AFTER ACCEPT) -->
+        <TextView
+            android:id="@+id/tvRideDetails"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Pickup: ---\nDestination: ---\nTime: ---"
+            android:textSize="12sp"
+            android:textColor="#555555"
+            android:visibility="gone"
+            android:paddingTop="6dp"
+            app:layout_constraintStart_toStartOf="@id/tvName"
+            app:layout_constraintEnd_toStartOf="@id/btnBook"
+            app:layout_constraintTop_toBottomOf="@id/tvFare"/>
+
+        <!-- BOOK / ACTION BUTTON -->
+        <Button
+            android:id="@+id/btnBook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="BOOK"
+            android:minWidth="90dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

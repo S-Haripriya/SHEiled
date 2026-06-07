@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F8FC">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="18dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Services"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#222"
+            android:layout_marginBottom="14dp"/>
+
+        <!-- GRID MENU -->
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:useDefaultMargins="true">
+
+
+            <!-- CHATBOT -->
+
+            <LinearLayout
+                android:id="@+id/btnChatBot"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/menu_card_bg">
+
+                <ImageView
+                    android:id="@+id/iconChatBot"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_chatbot"/>
+
+                <TextView
+                    android:id="@+id/titleChatBot"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Assistant"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#333"/>
+
+            </LinearLayout>
+
+
+            <!-- CAB BOOKING -->
+
+            <LinearLayout
+                android:id="@+id/btnCabDashboard"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/menu_card_bg">
+
+                <ImageView
+                    android:id="@+id/iconCab"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/icon_taxi"/>
+
+                <TextView
+                    android:id="@+id/titleCab"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Cab Booking"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#333"/>
+
+            </LinearLayout>
+
+
+            <!-- WOMEN PRODUCTS -->
+
+            <LinearLayout
+                android:id="@+id/btnBrowseProducts"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/menu_card_bg">
+
+                <ImageView
+                    android:id="@+id/iconProducts"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_products"/>
+
+                <TextView
+                    android:id="@+id/titleProducts"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Women Products"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#333"/>
+
+            </LinearLayout>
+
+
+            <!-- PERIOD TRACKER -->
+
+            <LinearLayout
+                android:id="@+id/btnPeriodTracker"
+                android:layout_width="0dp"
+                android:layout_height="130dp"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:gravity="center"
+                android:padding="16dp"
+                android:background="@drawable/menu_card_bg">
+
+                <ImageView
+                    android:id="@+id/iconPeriod"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:src="@drawable/ic_period"/>
+
+                <TextView
+                    android:id="@+id/titlePeriod"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Period Tracker"
+                    android:textStyle="bold"
+                    android:textSize="14sp"
+                    android:textColor="#333"/>
+
+            </LinearLayout>
+
+        </GridLayout>
+
+    </LinearLayout>
+
+</ScrollView>

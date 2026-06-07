@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">SHEiled</string>
+    <string name="button_name">Login</string>
+    <string name="new_button">+ Create Account</string>
+</resources>
